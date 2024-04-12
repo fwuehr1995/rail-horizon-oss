@@ -29,12 +29,12 @@ git submodule update --init --recursive
 
 Dependencies (Recommended: Ubuntu 22.04):
 * [ROS2 Humble](https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html)
-* Python: `sudo apt install python`
-* Boost: `sudo apt install libboost-all-dev`
-* Proj: `sudo apt install libproj-dev`
-* Protobuf (Map Service): `sudo apt install libprotobuf-dev protobuf-compiler`
-* Curl (Map Service): `sudo apt install libcurl4-openssl-dev`
-* CMake Version 3.25.0 or higher (not standard for Ubuntu 22.04, needs to be installed from source)
+* Python ^3.10: `sudo apt install python`
+* Boost ^1.74: `sudo apt install libboost-all-dev`
+* Proj ^8.2 : `sudo apt install libproj-dev`
+* Protobuf ^3.12 (Map Service): `sudo apt install libprotobuf-dev protobuf-compiler`
+* Curl ^7.81 (Map Service): `sudo apt install libcurl4-openssl-dev`
+* CMake Version ^3.25: [Install via official Kitware repositories](https://apt.kitware.com/)
 
 You should also create the underlay, which is the underlying workspace with ROS2 Tools available. It behaves similarly to a virtual environment and allows having multiple ROS2 versions installed on the system and use a specific one for each project. The underlay can be created automatically for every terminal session or manually at the beginning of a new session like this:
 ```bash

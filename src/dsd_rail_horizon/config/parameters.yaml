@@ -1,7 +1,3 @@
----
-# SPDX-FileCopyrightText: Copyright DB Netz AG
-# SPDX-License-Identifier: CC0-1.0
-
 rail_horizon_publisher:
     ros__parameters:
         rail_horizon_namespace: /rail_horizon/
@@ -30,8 +26,8 @@ rail_horizon_publisher:
         coupled_localization_topic: /coupled_localization
         coupled_localization_use_geoid: false
         spoof_gnss_position: true
-        gnss_position: [10.131524972366783, 53.498649583384044, 63.99] # Mittlerer Landweg
-        #gnss_position: [10.205911539920013, 53.490093170540035, 63.99] # Bergedorf
+        # gnss_position: [10.131524972366783, 53.498649583384044, 63.99] # Mittlerer Landweg
+        gnss_position: [10.205911539920013, 53.490093170540035, 63.99] # Bergedorf
         gnss_rotation: [0.0, 0.0, 0.0]
         gnss_swap_lat_lon: false
         map_roi: [9.991913, 53.477225, 10.237787, 53.567761] # map_roi - region of interest
